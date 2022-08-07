@@ -19,7 +19,7 @@ class Weather {
     </div>
 </div>
 <div class="weather-block">
-    <div class="icon"><img src="http://openweathermap.org/img/w/${this.icon}.png" alt=""></div>
+    <div class="icon"><img src="https://openweathermap.org/img/w/${this.icon}.png" alt=""></div>
     <div class="temp">${this.temp}°C</div>
     <div class="description">${this.description}</div>
 </div>`;
@@ -29,7 +29,7 @@ class Weather {
 let city = prompt("Введіть назву міста");
 
 fetch(
-  `http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=5d066958a60d315387d9492393935c19`
+  `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&APPID=5d066958a60d315387d9492393935c19`
 )
   .then((res) => res.json())
   .then((data) => {
